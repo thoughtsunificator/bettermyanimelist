@@ -1,0 +1,152 @@
+#topSearchText2 {
+	border-bottom: 0;
+	border-left: #2e51a2 1px solid;
+	border-right: 0;
+	border-top: 0;
+	display: inline-block;
+	font-family: Avenir,lucida grande,tahoma,verdana,arial,sans-serif;
+	height: 16px;
+	padding-left: 2px;
+	text-indent: 4px;
+	width: 286px;
+}
+
+#autocomplete {
+		display: none;
+		position: absolute;
+		background-color: white;
+		z-index: 101;
+		border: solid #ebebeb;
+		border-width: 0px 0px 1px 1px;
+		max-height: 500px;
+		min-height: 70px;
+		min-width: 346px;
+		max-width: 346px;
+		top: 100%;
+		right: 0px;
+		box-shadow: 0px 1px 1px #bebebe;
+		overflow: auto;
+		text-align: center;
+}
+
+#autocomplete.onResult,
+#autocomplete.onMessage {
+		display: block;
+}
+
+#autocomplete .cloak {
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 100;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.5);
+}
+
+#autocomplete.onResult .cloak,
+#autocomplete.onMessage .cloak {
+		display: block;
+}
+
+#autocomplete.loading .message:before {
+		content: ' ';
+		margin: 15px auto 0 auto;
+		display: block;
+		width: 32px;
+		height: 32px;
+		background-image: url(chrome-extension://__MSG_@@extension_id__/resources/images/autocomplete/loading-spinner.gif);
+		background-repeat: no-repeat;
+}
+
+#autocomplete .message {
+		position: relative;
+		line-height: 30px;
+		color: black;
+		z-index: 102;
+}
+
+#autocomplete.onResult .message {
+		display: none;
+}
+
+#autocomplete.onMessage .entries {
+		display: none;
+}
+
+#autocomplete .entries {
+		display: none;
+		position: relative;
+		background-color: #f6f6f6;
+		z-index: 102;
+}
+
+#autocomplete.onResult .entries {
+		display: block;
+}
+
+#autocomplete .entries .entry {
+		overflow: auto;
+		text-align: left;
+		padding: 5px 0px 5px 5px;
+}
+
+#autocomplete .entries .entry:not(:last-child) {
+		border: solid #bebebe;
+		border-width: 0px 0px 1px 0px;
+}
+
+#autocomplete .entries .entry img.thumbnail {
+		background-color: #ffffff;
+		border: 1px solid #bebebe;
+		padding: 1px;
+		float: left;
+		margin: 0px 5px 0px 0px;
+		width: 45px;
+}
+
+#autocomplete .entries .entry .title {
+		margin-right: 5px;
+}
+
+#autocomplete .entries .entry small.status {
+		bottom: 0px;
+		font-size: 8px;
+}
+
+#autocomplete .entries .entry .title,
+#autocomplete .entries .entry .synopsis {
+		word-wrap: break-word;
+		font-size: 10px;
+}
+
+#autocomplete .entries .entry .button_add,
+#autocomplete .entries .entry .button_edit {
+		float: right;
+}
+
+#autocomplete .entries .entry .synopsis a {
+		word-break: normal!important;
+}
+
+#autocomplete .entries .entry .information,
+#autocomplete .entries .entry .synopsis {
+		margin-top: 4px;
+		line-height: 11.5px;
+		text-align: left;
+		color: black;
+}
+
+#autocomplete .entries .entry .information span {
+		margin-right: 5px;
+}
+
+#autocomplete .information {
+		font-size: 9px;
+		background: #EEEEEF;
+}
+
+#topSearchResultList {
+		display: none!important;
+}

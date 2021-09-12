@@ -1,0 +1,92 @@
+.bbCodetoolbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.bbCodetoolbar .buttons {
+    background-color: #4064b8;
+    border: 1px solid #d8d8d8;
+    border-bottom: 1px solid #ffffff;
+    padding: 5px;
+}
+
+.bbCodetoolbar button {
+    outline: 0;
+    position: relative;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.bbCodetoolbar textarea {
+    width: auto!important;
+}
+
+.bbCodetoolbar button.bmalSuitable,
+.bbCodetoolbar select.bmalSuitable,
+.bbCodetoolbar select.bmalSuitable option {
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: #6d8dd8;
+    border-left-color: #6d8dd8;
+    border-right-color: #2e51a3;
+    background-color: #4064b8;
+    border-bottom: 2px solid #192a51;
+    color: hsla(0, 0%, 100%, .8);
+}
+
+.bbCodetoolbar select.bmalSuitable optgroup:disabled,
+.bbCodetoolbar select.bmalSuitable option:disabled {
+    background-color: #8b99bb;
+    border-top-color: #d86d6d;
+    border-left-color: #d86d6d;
+    border-right-color: #a32e2e;
+    border-bottom: 2px solid #511919;
+    color: #c1c9db;
+}
+
+.bbCodetoolbar select.bmalSuitable option:checked {
+    background-color: #7e94c7;
+}
+
+.bbCodetoolbar button.bmalSuitable:hover {
+    background-color: #4d70c0;
+}
+
+.bbCodetoolbar button.bmalSuitable:hover,
+.bbCodetoolbar select.bmalSuitable:hover {
+    color: #fff;
+}
+
+.bbCodetoolbarbutton.bmalSuitable.active,
+.bbCodetoolbar button.bmalSuitable:active,
+.bbCodetoolbar select.bmalSuitable.active,
+.bbCodetoolbar select.bmalSuitable:active,
+.bbCodetoolbar select.bmalSuitable:focus {
+    background-color: #335093;
+}
+
+.bbCodetoolbar button.bmalSuitable.special,
+.bbCodetoolbar select.bmalSuitable.special {
+    background-color: #b84040;
+    border-color: #d86d6d #a32e2e #4a0c0c #d86d6d;
+}
+
+.bbCodetoolbar button.bmalSuitable.special:hover {
+    background-color: #cb6161;
+}
+
+.bbCodetoolbar button.bmalSuitable.special:active {
+    background-color: #8c3535;
+}
+
+.bbCodetoolbar button.bmalSuitable.special:disabled,
+.bbCodetoolbar button.bmalSuitable:disabled,
+.bbCodetoolbar select.bmalSuitable:disabled {
+    background-color: #868fa6;
+    border-top-color: #99a3c1;
+    border-left-color: #aeb9d5;
+    border-bottom: 2px solid #595959;
+    border-right-color: #838c9f;
+    color: #d1d1d1;
+}

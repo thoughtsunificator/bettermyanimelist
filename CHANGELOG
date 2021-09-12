@@ -1,0 +1,538 @@
+BetterMyAnimeList version 1.0.0
+=======
+
+ General
+
+   * Added autocomplete feature to the main search bar
+
+BetterMyAnimeList version 1.1.0
+=======
+
+ Autocomplete
+
+   * Improved search
+
+BetterMyAnimeList version 1.2.0
+=======
+
+ Forum
+
+   * Added a link to hide a forum
+
+BetterMyAnimeList version 1.3.0
+=======
+
+ List
+
+   * Added a button to export someone else's list
+
+BetterMyAnimeList version 1.4.0
+=======
+
+ General
+
+   * [BETA] Added streaming for anime (see 'watching' tab on anime pages)
+
+BetterMyAnimeList version 1.4.2
+=======
+
+General
+
+   * Renamed streaming button from "watching" to "streaming" (disambiguation)
+
+BetterMyAnimeList version 1.4.3
+=======
+
+ General
+
+   * Fixed various bugs
+
+BetterMyAnimeList version 1.4.4
+=======
+
+ List
+
+   General
+
+   * Added a button to empty the list
+
+   Export
+
+   * Added missing states for the export
+
+BetterMyAnimeList version 1.5.0
+=======
+
+ Streaming
+
+   * Fixed various bugs
+
+BetterMyAnimeList version 1.5.1
+=======
+
+ General
+
+   * Updated application icons
+
+ MediaPlayer
+
+   General
+
+     * Fixed various bugs
+
+   Layout
+
+     General
+
+       * (In-Progress) Added a select box to choose among different Sources
+
+BetterMyAnimeList version 1.5.2
+=======
+
+ General
+
+   * Removed the ability of hiding a forum
+   * Fixed various bugs
+
+BetterMyAnimeList version 1.5.3
+=======
+
+ List
+
+   General
+
+     * Added the ability 'refresh-less' search
+
+   Manga
+
+     * Fixed a critical bug preventing the export
+
+ MediaPlayer
+
+   Source
+
+     General
+
+       * Removed Cloudflare window
+
+BetterMyAnimeList version 1.5.4
+=======
+
+ General
+
+   * Fixed various bugs
+
+ MediaPlayer
+
+   General
+
+     * Improved stability and speed
+
+BetterMyAnimeList version 1.5.5
+=======
+
+ General
+
+   * A new icon is displayed inside the omnibox if BetterMyAnimeList is enabled
+
+BetterMyAnimeList version 1.5.6
+=======
+
+ Autocomplete
+
+   * The special characters are replaced by a wildcard which makes the searches more efficient
+
+ List
+
+   * A new confirmation popup shows up when you try to clear the list
+
+ MediaPlayer
+
+   General
+
+     * Added shortcuts
+
+   Source
+
+      General
+
+        * [Beta] Added multiple sources
+
+BetterMyAnimeList version 1.5.7
+=======
+
+ General
+
+   * [Beta] Added reading for manga (see "reading" tab on manga pages)
+
+ MediaPlayer
+
+   Layout
+
+     Streaming
+
+       * Improved layout
+
+BetterMyAnimeList version 1.7.1
+=======
+
+ General
+
+   * Fixed various bugs
+
+BetterMyAnimeList version 1.7.2
+=======
+
+ General
+
+   * Fixed various bugs
+   * A new popup shows up when you use the export list system
+
+BetterMyAnimeList version 2.0.0
+=======
+
+ General
+
+   * Added a BBCode system
+   * Fixed various bugs
+
+ Streaming/Reading
+
+   * Layout update
+
+ Streaming
+
+   Source
+     * Added Source #1
+     * Added Source #2
+
+BetterMyAnimeList version 2.1.0
+=======
+
+ General
+
+   * Fixed various bugs
+
+BetterMyAnimeList version 2.2.0
+=======
+
+ MediaPlayer
+
+   Layout
+
+     General
+
+       * Improved layout
+
+    Source
+
+      Streaming
+
+        * Added Source #3
+
+      Reading
+
+        * Added Source #2
+        * Added Source #3
+
+ BBCode Toolbar
+
+   * Increases the size of the BBCode buttons to make them easier to click on
+   * Fixed various bugs
+
+BetterMyAnimeList version 2.2.1
+=======
+
+ MediaPlayer
+
+   Layout
+
+     Streaming
+
+       * Fixes the controls bar
+       * The playback quality is now saved
+       * Fixed various bugs
+
+BetterMyAnimeList version 2.2.4
+=======
+
+ MediaPlayer
+
+   Source
+
+     General
+
+       Added the ability to resume anime and manga
+
+BetterMyAnimeList version 2.2.5
+=======
+
+ General
+
+   * Fixed various bugs
+
+BetterMyAnimeList version 2.2.6
+=======
+
+ Autocomplete
+
+   * Redirects to the first result if it is the only one
+
+BetterMyAnimeList version 2.2.7
+=======
+
+ General
+
+   * Fixed various bugs
+
+BetterMyAnimeList version 2.2.8
+=======
+
+ General
+
+   * Fixed various bugs
+
+BetterMyAnimeList version 2.2.9
+=======
+
+ General
+
+   * Fixed various bugs
+
+BetterMyAnimeList version 2.3.0
+=======
+
+ General
+
+   * Removed the ability to export other people's list
+   * Removed the ability to clear the list
+
+BetterMyAnimeList version 2.3.5
+=======
+
+ BBCode toolbar
+
+   * Fixed various bugs
+   * Updated the layout
+
+ MediaPlayer
+
+   Source
+
+     * Sorted sources into categories
+
+   General
+
+     * Removed ability to resume anime and manga (will be reintroduced in a few releases)
+
+BetterMyAnimeList version 2.3.6
+=======
+
+ General
+
+   * Renamed the project on the Chrome Webstore Page from BetterMyAnimeList (dev) to BetterMyAnimeList
+
+ Autocomplete
+
+   Layout
+
+     General
+
+       * Added the ability to watch an anime/manga by clicking the thumbnail
+
+BetterMyAnimeList version 2.3.7
+=======
+
+ Autocomplete
+
+   General
+
+     * Improved search results
+
+ MediaPlayer
+
+   Source
+
+     * Fixed various bugs
+
+BetterMyAnimeList version 2.3.8
+=======
+
+ MediaPlayer
+
+   Layout
+
+     Streaming
+
+       * Fixed 'stuck at loading screen' issue
+       * Fixed 'blinking cursor from being hidden' issue
+
+ BBCode toolbar
+
+   * Fixed 'BBCode toolbar controls are all connected to one textarea' issue
+   * Fixed caret issues
+   * Added a BBCode preview feature
+
+BetterMyAnimeList version 2.3.9
+=======
+
+ BBCode toolbar
+
+   * Fixed ordered list
+
+ MediaPlayer
+
+   General
+
+     * Reintroduced the ability to resume anime and manga
+
+   Source
+
+     General
+
+       * Fixed various bugs
+
+BetterMyAnimeList version 2.4.0
+=======
+
+ MediaPlayer
+
+   General
+
+     * Fixed various bugs
+
+BetterMyAnimeList version 2.4.1
+=======
+
+ General
+
+   * Changed the media button color and position
+
+ MediaPlayer
+
+   Layout
+
+     General
+
+       * Added a button to clear the cache and refresh the MediaPlayer
+       * Added source controls bar to cinema mode
+
+   Source
+
+     General
+
+       * Added a timeout for loading times so that the MediaPlayer can't be stuck at loading screen
+       * (In-Progress) MediaPlayer will show the episodes according to the title. For example Gintama 2011 would start at the episode 202 and end at the episode 252 instead of starting at the episode 01 and ending at the episode 265
+
+     Streaming
+
+       * Reintroduced quality fallbacks (should the favorite quality be unavailable the nearest is to be chosen)
+
+ Autocomplete
+
+   Layout
+
+     General
+
+       * Status are now represented by a small colored round instead of between parentheses
+       * Adjusted the size of the autocomplete box
+
+BetterMyAnimeList version 2.4.2
+=======
+
+ General
+
+   * Removed the welcome notification when installing the extension.
+
+ Autocomplete
+
+  General
+
+    * Fixed results not being able to be displayed because of the layout changes.
+
+ MediaPlayer
+
+   Layout
+
+     General
+
+       * Replaced the streaming & reading buttons  by icons.
+       * Replaced texts on buttons by icons.
+
+     Reading
+
+       * Modified the next & previous buttons so that they affect the chapters instead of the pages.
+
+     Streaming
+
+       * Added a loader to be displayed when the video is buffering.
+
+   Source
+
+     General
+
+       * Fixed Source #2
+       * Added Source #3
+
+BetterMyAnimeList version 2.4.3
+=======
+
+ General
+
+   * Fixed local storage not persisting changes.
+
+BetterMyAnimeList version 2.4.4
+=======
+
+ MediaPlayer
+
+   Layout
+
+     Streaming
+
+       * Added a specific color for the selected option of a select box.
+
+BetterMyAnimeList version 2.4.5
+=======
+
+ General
+
+   * Removed the version string's leading zero.
+
+ MediaPlayer
+
+   General
+
+     * Updated the MediaPlayer button so that it can be clicked even if the document is not fully loaded.
+
+...
+
+BetterMyAnimeList version 2.5.0 (5/5/2016)
+=======
+
+ General
+
+   * Removed the Autocomplete feature (read the project's description for more details).
+   * Removed the BBCode toolbar (read the project's description for more details).
+
+ MediaPlayer
+
+   General
+
+    * Introduced the new interface
+
+...
+
+BetterMyAnimeList version 2.5.56 (8/10/2016)
+=======
+
+  MediaPlayer
+
+     Source
+
+        General
+
+          * Fixed General #2
+
+
+* The following changelog is still a draft some changes and versions might be missing.

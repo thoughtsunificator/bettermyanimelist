@@ -1,0 +1,159 @@
+;
+body.mediaplayer-open {
+    overflow: hidden;
+}
+
+#mediaPlayer_button {
+    background-color: hsla(0, 68%, 36%, .35)!important;
+    color: hsl(0, 0%, 100%)!important;
+    margin: 0 3px 0 0!important;
+}
+
+#mediaPlayer_button:hover {
+    background-color: hsla(0, 68%, 36%, .45)!important;
+}
+
+#mediaPlayer {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    top: 15vh;
+    left: 0;
+    margin: auto;
+    width: 70vw;
+    z-index: 2147483647;
+}
+
+#mediaPlayer *:focus {
+    outline: none;
+}
+
+#mediaPlayer.minimized {
+    bottom: 3vh;
+    left: initial;
+    top: initial;
+    width: 40vw;
+    right: 1vw;
+}
+
+#mediaPlayer .cloak {
+    background-color: hsl(0, 0%, 0%);
+    height: 100%;
+    left: 0;
+    opacity: .95;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    visibility: visible;
+    z-index: 2147483646;
+}
+
+#mediaPlayer.light_off .cloak {
+    opacity: 1;
+}
+
+#mediaPlayer.fullscreen .cloak,
+#mediaPlayer.minimized .cloak {
+    display: none;
+}
+
+#mediaPlayer .sourceControls {
+    display: flex;
+    height: 30px;
+    position: relative;
+    z-index: 2147483647;
+}
+
+#mediaPlayer .sourceControls button.bmalSuitable,
+#mediaPlayer .sourceControls select.bmalSuitable,
+#mediaPlayer .sourceControls select.bmalSuitable option {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(25, 42, 81);
+    border-left-width: 1px;
+    border-left-color: rgb(25, 25, 25);
+    border-right-color: rgb(25, 25, 25);
+    border-right-width: 1px;
+    border-top-color: rgb(25, 25, 25);
+    border-top-width: 1px;
+    color: rgba(255, 255, 255, .8);
+    font-size: 11px;
+    padding: 1px 6px;
+}
+
+#mediaPlayer .sourceControls select.bmalSuitable option.watched {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#mediaPlayer .sourceControls button.bmalSuitable:hover {
+    background-color: hsl(0, 0%, 3%);
+}
+
+#mediaPlayer .sourceControls button.bmalSuitable.special,
+#mediaPlayer .sourceControls select.bmalSuitable.special {
+    border-bottom-color: rgb(163, 46, 46);
+}
+
+#mediaPlayer .sourceControls button.bmalSuitable:disabled,
+#mediaPlayer .sourceControls select.bmalSuitable optgroup:disabled,
+#mediaPlayer .sourceControls select.bmalSuitable option:disabled,
+#mediaPlayer .sourceControls select.bmalSuitable:disabled {
+    background-color: hsl(0, 0%, 18%)!important;
+    border-bottom: 2px solid rgb(89, 89, 89)!important;
+    border-left-color: hsl(0, 0%, 20%)!important;
+    border-right-color: hsl(0, 0%, 20%)!important;
+    border-top-color: hsl(0, 0%, 20%)!important;
+    color: hsl(0, 0%, 32%)!important;
+}
+
+#mediaPlayer .sourceControls select.bmalSuitable option:checked {
+    background-color: hsl(0, 0%, 14%);
+}
+
+#mediaPlayer .sourceControls select:nth-of-type(4) {
+    flex-grow: 1;
+}
+
+#mediaPlayer .sourceControls button.bmalSuitable:focus,
+#mediaPlayer .sourceControls select.bmalSuitable:focus {
+    background-color: rgb(33, 33, 33);
+}
+
+#mediaPlayer .interface,
+#mediaPlayer .media {
+    background-color: hsl(0, 0%, 0%);
+    border: none;
+    box-shadow: 1px 1px 5px;
+    height: 65vh;
+    overflow: auto;
+    padding: 0;
+    position: relative;
+    z-index: 2147483647;
+}
+
+#mediaPlayer .interface {
+    display: none;
+    width: 100%;
+}
+
+#mediaPlayer.minimized .media {
+    height: 35vh;
+    border-bottom: initial;
+}
+
+#mediaPlayer .media .overlay {
+    background-color: hsl(0, 0%, 0%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+#mediaPlayer .media.error .overlay,
+#mediaPlayer .media.initializing .overlay,
+#mediaPlayer .media.loading .overlay {
+    display: block;
+}

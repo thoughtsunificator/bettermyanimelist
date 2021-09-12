@@ -1,0 +1,87 @@
+{
+		"author": "BetterMyAnimeList",
+		"content_scripts": [{
+				"css": [
+						"vendors/fortawesome/fontawesome/css/font-awesome.css",
+						"resources/css/mediaplayer.css"
+				],
+				"js": [
+						"logics/Storage.js",
+						"logics/Helpers.js",
+						"logics/TitlesMatcher.js",
+						"logics/MediaPlayer.js"
+				],
+				"matches": [
+						"*://*.myanimelist.net/anime/*",
+						"*://*.myanimelist.net/anime.php?id=*",
+						"*://*.myanimelist.net/manga/*",
+						"*://*.myanimelist.net/manga.php?id=*"
+				],
+				"run_at": "document_start"
+		}, {
+				"css": [
+						"resources/css/streaming.css"
+				],
+				"js": [
+						"logics/Streaming.js"
+				],
+				"matches": [
+						"*://*.myanimelist.net/anime/*",
+						"*://*.myanimelist.net/anime.php?id=*"
+				],
+				"run_at": "document_start"
+		}, {
+				"css": [
+						"resources/css/reading.css"
+				],
+				"js": [
+						"logics/Reading.js"
+				],
+				"matches": [
+						"*://*.myanimelist.net/manga/*",
+						"*://*.myanimelist.net/manga.php?id=*"
+				],
+				"run_at": "document_start"
+		}, {
+				"css": [
+						"resources/css/autocomplete.css",
+						"resources/css/bbcode.css"
+				],
+				"js": [
+						"/logics/Autocomplete.js",
+						"/logics/BBcode.js",
+						"/bettermyanimelist.js"
+				],
+				"matches": [
+						"*://*.myanimelist.net/*"
+				],
+				"run_at": "document_start"
+		}],
+		"description": "Watch anime and read manga on MyAnimeList.net for free and without restrictions.",
+		"homepage_url": "http://bettermyanimelist.net",
+		"icons": {
+				"16": "resources/images/bettermyanimelist/icon-16.png",
+				"48": "resources/images/bettermyanimelist/icon-48.png",
+				"128": "resources/images/bettermyanimelist/icon-128.png"
+		},
+		"manifest_version": 2,
+		"minimum_chrome_version": "49.0.2623.108",
+		"name": "BetterMyAnimeList",
+		"permissions": [
+				"storage",
+				"*://*.myanimelist.net/*",
+				"*://api.jikan.moe/*",
+				"*://*.kissanime.to/*",
+				"*://*.gogoanime.io/*",
+				"*://*.kissmanga.com/*",
+				"*://*.vidstream.io/*",
+				"*://*.vidstreaming.io/*",
+				"*://*.mp4upload.com/*",
+				"*://*.mangahit.com/*"
+		],
+		"short_name": "BMAL",
+		"version": "2.5.57",
+		"web_accessible_resources": [
+				"resources/**/*"
+		]
+}

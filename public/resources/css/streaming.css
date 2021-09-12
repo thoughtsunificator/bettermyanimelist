@@ -1,0 +1,169 @@
+#mediaPlayer.fullscreen {
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#mediaPlayer.fullscreen .media {
+    height: 100%;
+    width: 100%;
+}
+
+#mediaPlayer.fullscreen .sourceControls {
+    display: none;
+}
+
+#mediaPlayer .media video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#mediaPlayer .media.buffering .overlay {
+    display: block;
+    opacity: 0.2;
+}
+
+#mediaPlayer .media.buffering .overlay,
+#mediaPlayer .media.loading .overlay {
+    background-image: url(chrome-extension://__MSG_@@extension_id__/resources/images/mediaplayer/loading-overlay.gif);
+}
+
+#mediaPlayer .media.error .overlay {
+    background-image: url(chrome-extension://__MSG_@@extension_id__/resources/images/mediaplayer/error-overlay.gif);
+}
+
+#mediaPlayer .media .controlsBar {
+    align-items: center;
+    background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.6) 0%, transparent 80%);
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    visibility: hidden;
+    margin: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#mediaPlayer .media .controlsBar.visible {
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+    visibility: visible;
+}
+
+#mediaPlayer .media .controlsBar.hidden {
+    opacity: 0;
+    transition: visibility 0s 1.0s, opacity 0.2s ease-out 0.4s;
+    visibility: hidden;
+}
+
+#mediaPlayer .media .controlsBar button {
+    background-color: transparent;
+    border: none;
+    color: hsla(0, 0%, 100%, 0.8);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#mediaPlayer .media .controlsBar button:hover {
+    color: hsla(0, 0%, 100%, 1);
+}
+
+#mediaPlayer .media .controlsBar input[type=range] {
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+
+#mediaPlayer .media .controlsBar input[type=range]::-webkit-slider-runnable-track {
+    border: 1px solid gray;
+    cursor: pointer;
+    height: 13px;
+    width: 300px;
+}
+
+#mediaPlayer .media .controlsBar .thumbnailWrapper {
+    background-color: black;
+    background-size: 100%;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/resources/images/mediaplayer/loading-overlay.gif");
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    bottom: 30px;
+    border: 1px solid gray;
+    display: none;
+    height: 73px;
+    padding: 1px;
+    position: absolute;
+    width: 130px;
+}
+
+#mediaPlayer .media .controlsBar .thumbnail {
+    height: 100%;
+    width: 100%;
+}
+
+#mediaPlayer .media .controlsBar .thumbnailTime {
+    background-color: hsl(0, 0%, 0%);
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    font-size: 8px;
+    margin: auto;
+    left: 0;
+    opacity: 0.5;
+    text-align: center;
+    width: 100%;
+}
+
+#mediaPlayer .media .controlsBar .timeline {
+    align-self: center;
+    flex: 1 1 0%;
+}
+
+#mediaPlayer .media .controlsBar .settings-button:hover {
+    transform: rotate(-30deg);
+    transition: transform 0.5s linear;
+}
+
+#mediaPlayer .media .controlsBar .settings-button {
+    margin: 0 2px 0 0;
+}
+
+#mediaPlayer .media .controlsBar .play-button,
+#mediaPlayer .media .controlsBar .timeline,
+#mediaPlayer .media .controlsBar .time-display,
+#mediaPlayer .media .controlsBar .mute-button,
+#mediaPlayer .media .controlsBar .volume-slider,
+#mediaPlayer .media .controlsBar .screenshot-button {
+    margin: 0 9px 0 0;
+}
+
+#mediaPlayer .media .controlsBar .time-display {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#mediaPlayer .media .controlsBar [type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+#mediaPlayer .media .controlsBar .volume-slider {
+    flex: 1 1.9 auto;
+    max-width: 70px;
+    min-width: 15px;
+}
+
+#mediaPlayer .media .controlsBar input[type=range]:focus {
+    outline: none;
+}
+
+#mediaPlayer .media .controlsBar .timeline {
+    flex-grow: 1;
+}

@@ -1,0 +1,36 @@
+#mediaPlayer .media {
+    height: 75vh;
+}
+
+#mediaPlayer .sourceControls {
+    box-shadow: 1px 5px 5px black;
+}
+
+#mediaPlayer .media img {
+    animation: opacity 1s ease;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+}
+
+#mediaPlayer .media img[data-cursor=left] {
+    cursor: url(chrome-extension://__MSG_@@extension_id__/resources/images/mediaplayer/module/reading/left-pointing-arrow.png), auto;
+}
+
+#mediaPlayer .media img[data-cursor=right] {
+    cursor: url(chrome-extension://__MSG_@@extension_id__/resources/images/mediaplayer/module/reading/right-pointing-arrow.png), auto;
+}
+
+#mediaPlayer .media img.placeholder {
+    display: none;
+}
+
+#mediaPlayer .media.error .overlay {
+    background-image: url(chrome-extension://__MSG_@@extension_id__/resources/images/mediaplayer/error-overlay.gif);
+}
+
+#mediaPlayer .media.loading .overlay {
+    background-image: url(chrome-extension://__MSG_@@extension_id__/resources/images/mediaplayer/module/reading/loading-overlay.gif);
+    opacity: 0.8;
+}
